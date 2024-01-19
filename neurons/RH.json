@@ -1,0 +1,40 @@
+{
+    "RH_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["RH_FLX", "inter.RHLH_EXT", "inter.RHRF_EXT", "inter.RHLF_EXT", "RH_EXT_SUP"],
+        "weights" : [-1.6, -2, -2, -2, -1.2],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "RH_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["RH_EXT", "inter.RHLH_FLX", "inter.RHRF_FLX", "inter.RHLF_FLX", "RH_FLX_SUP"],
+        "weights" : [-1.6, -2, -2, -2, -1.2],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "RH_EXT_SUP":
+    {
+        "N" : 1,
+        "type" : 6,
+        "connection" : ["RH_EXT"],
+        "weights" : [1],
+        "thres" : 1
+    },
+    "RH_FLX_SUP":
+    {
+        "N" : 1,
+        "type" : 6,
+        "connection" : ["RH_FLX"],
+        "weights" : [1],
+        "thres" : 1
+    }
+}

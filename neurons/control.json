@@ -1,0 +1,22 @@
+{
+    "WALK":
+    {
+        "N" : 0,
+        "type" : 4,
+        "connection" : [""],
+        "weights" : [],
+        "c" : 1, 
+        "end" : 60,
+        "start" : 27.4
+    },
+    "TROT":
+    {
+        "N" : 0,
+        "type" : 4,
+        "connection" : [""],
+        "weights" : [],
+        "c" : 1, 
+        "end" : 27.4,
+        "start" : 0
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "inter.RHLF_EXT":
+    {
+        "N" : 3,
+        "type" : 5,
+        "connection" : ["LF_EXT", "WALK", "TROT"],
+        "weights" : [0.8, 1, 0],
+        "bypass" : 0
+    },
+    "inter.RHLF_FLX":
+    {
+        "N" : 3,
+        "type" : 5,
+        "connection" : ["LF_FLX", "WALK", "TROT"],
+        "weights" : [0.8, 1, 0],
+        "bypass" : 0
+    }
+}

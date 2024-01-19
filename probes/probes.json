@@ -1,0 +1,11 @@
+{
+    "file" : "default.csv",
+    "probes" : 
+    {
+        "RF_EXT" : "RF_FLX",
+        "LF_EXT" : "LF_FLX",
+        "RH_EXT" : "RH_FLX",
+        "LH_EXT" : "LH_FLX"
+    }
+    
+}

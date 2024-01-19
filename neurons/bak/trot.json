@@ -1,0 +1,112 @@
+{
+    "trot.LF_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.LF_FLX", "trot.RF_EXT", "trot.LH_EXT"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.LF_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.LF_EXT", "trot.RF_FLX", "trot.LH_FLX"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.RF_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.RF_FLX", "trot.LF_EXT", "trot.RH_EXT"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.RF_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.RF_EXT", "trot.LF_FLX", "trot.RH_FLX"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.LH_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.LH_FLX", "trot.RH_EXT", "trot.LF_EXT"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.LH_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.LH_EXT", "trot.RH_FLX", "trot.LF_FLX"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.RH_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.RH_FLX", "trot.LH_EXT", "trot.RF_EXT"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.RH_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["trot.U", "trot.supressU", "trot.RH_EXT", "trot.LH_FLX", "trot.RF_FLX"],
+        "weights" : [1, -1.1, -0.8, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "trot.supressU":
+    {
+        "N" : 0,
+        "type" : 4,
+        "connection" : [""],
+        "weights" : [],
+        "c" : 0.9,
+        "end" : 90,
+        "start" : 45
+    },
+
+    "trot.U":
+    {
+        "N" : 0,
+        "type" : 4,
+        "connection" : [""],
+        "weights" : [],
+        "c" : 1,
+        "end" : 5,
+        "start" : 0
+    }
+
+}

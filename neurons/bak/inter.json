@@ -1,0 +1,91 @@
+{
+    "inter.RF_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.RF_EXT", "trot.RF_EXT", "inter.RF_FLX", "inter.LF_EXT", "inter.RH_EXT"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    },
+    "inter.LF_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.LF_EXT", "trot.LF_EXT", "inter.LF_FLX", "inter.LH_EXT", "inter.RF_EXT"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    }, 
+    "inter.RH_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.RH_EXT", "trot.RH_EXT", "inter.RH_FLX", "inter.RF_EXT", "inter.LH_EXT"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    },
+    "inter.LH_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.LH_EXT", "trot.LH_EXT", "inter.LH_FLX", "inter.LF_EXT", "inter.RH_EXT"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    },
+    "inter.RF_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.RF_FLX", "trot.RF_FLX", "inter.RF_EXT", "inter.RH_FLX", "inter.LF_FLX"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    },
+    "inter.LF_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.LF_FLX", "trot.LF_FLX", "inter.LF_EXT", "inter.RF_FLX", "inter.LH_FLX"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    },
+    "inter.RH_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.RH_FLX", "trot.RH_FLX", "inter.RH_EXT", "inter.RF_FLX", "inter.LH_FLX"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    },
+    "inter.LH_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["walk.LH_FLX", "trot.LH_FLX", "inter.LH_EXT", "inter.LF_FLX", "inter.RH_FLX"],
+        "weights" : [1, 1, -1.2, -0.8, -0.8],
+        "s" : 0,
+        "tu" : 0.001,
+        "tv" : 0.001,
+        "b" : 0
+    }
+
+}

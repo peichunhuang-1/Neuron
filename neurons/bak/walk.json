@@ -1,0 +1,115 @@
+{
+    "walk.LF_EXT":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.RF_EXT", "walk.LH_EXT", "walk.RH_EXT", "walk.LF_FLX"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "walk.RF_EXT":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.LF_EXT", "walk.RH_EXT", "walk.LH_EXT", "walk.RF_FLX"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "walk.LH_EXT":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.RH_EXT", "walk.LF_EXT", "walk.RF_EXT", "walk.LH_FLX"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+
+    "walk.RH_EXT":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.LH_EXT", "walk.RF_EXT", "walk.LF_EXT", "walk.RH_FLX"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+
+    "walk.LF_FLX":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.RF_FLX", "walk.LH_FLX", "walk.RH_FLX", "walk.LF_EXT"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.5,
+        "tv" : 1,
+        "b" : 5
+    },
+    "walk.RF_FLX":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU","walk.RH_FLX", "walk.LH_FLX", "walk.LF_FLX", "walk.RF_EXT"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.5,
+        "tv" : 1,
+        "b" : 5
+    },
+    "walk.LH_FLX":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.RH_FLX", "walk.LF_FLX", "walk.RF_FLX", "walk.LH_EXT"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6, -0.8],
+        "s" : 1,
+        "tu" : 0.5,
+        "tv" : 1,
+        "b" : 5
+    },
+
+    "walk.RH_FLX":
+    {
+        "N" : 6,
+        "type" : 2,
+        "connection" : ["walk.U", "walk.supressU", "walk.LF_FLX", "walk.RF_FLX", "walk.LH_FLX", "walk.RH_EXT"],
+        "weights" : [1, -1.1, -1.6, -1.6, -1.6],
+        "s" : 1,
+        "tu" : 0.5,
+        "tv" : 1,
+        "b" : 5
+    },
+
+    "walk.supressU":
+    {
+        "N" : 0,
+        "type" : 4,
+        "connection" : [""],
+        "weights" : [],
+        "c" : 0.9, 
+        "end" : 45,
+        "start" : 0
+    },
+
+    "walk.U":
+    {
+        "N" : 0,
+        "type" : 4,
+        "connection" : [""],
+        "weights" : [],
+        "c" : 1, 
+        "end" : 50,
+        "start" : 45
+    }
+}

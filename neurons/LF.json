@@ -1,0 +1,40 @@
+{
+    "LF_EXT":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["LF_FLX", "inter.LFLH_EXT", "inter.LFRF_EXT", "inter.LFRH_EXT", "LF_EXT_SUP"],
+        "weights" : [-1.6, -2, -2, -2, -1.2],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "LF_FLX":
+    {
+        "N" : 5,
+        "type" : 2,
+        "connection" : ["LF_EXT", "inter.LFLH_FLX", "inter.LFRF_FLX", "inter.LFRH_FLX", "LF_FLX_SUP"],
+        "weights" : [-1.6, -2, -2, -2, -1.2],
+        "s" : 1,
+        "tu" : 0.1,
+        "tv" : 1,
+        "b" : 5
+    },
+    "LF_EXT_SUP":
+    {
+        "N" : 1,
+        "type" : 6,
+        "connection" : ["LF_EXT"],
+        "weights" : [1],
+        "thres" : 1
+    },
+    "LF_FLX_SUP":
+    {
+        "N" : 1,
+        "type" : 6,
+        "connection" : ["LF_FLX"],
+        "weights" : [1],
+        "thres" : 1
+    }
+}
